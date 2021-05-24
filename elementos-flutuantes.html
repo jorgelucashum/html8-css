@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos flutuantes</title>
+
+        <style type="text/css">
+
+            /*Elementos flutuantes: Usando o atributo 'float', o layout segue um padrão para que os conteúdos fiquem um ao lado do outro*/
+            .conteudo{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: left;
+                margin: 5px;
+            }
+
+            .conteudo1{
+                background: red;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: left;
+                margin: 5px;
+            }
+
+            /* Clear: Usando o atributo 'clear' é retirado o padrão/fluxo usado no layout do 'float'. */
+            .clear{
+                clear: both;
+            }
+
+            #principal{
+                border: 3px solid red;
+                background: gray;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="principal">
+            <div class="conteudo1">
+                Conteúdo 1
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 2
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 3 
+            </div>
+
+            <!-- <div> Criada no fim para limpar o fluxo/padrão do layout porque o atributo 'float' não empurra os elementos da <div> pai. -->
+            <div class="clear"></div> 
+        </div>
+
+
+    </body>
+</html>

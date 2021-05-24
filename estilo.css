@@ -1,0 +1,28 @@
+/* Modelo Caixa: */
+
+
+.conteudo{
+    border: 1px solid rgb(129, 129, 129);
+    /*  Padding, espaçamentos internos específicos:
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    padding: 20px 15px 10px 5px; (sentido horário)*/
+    padding: 10px;
+
+    /* Margin, espaçamentos externos específicos:
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;  */
+    margin: 20px; 
+
+    background: rgb(0, 153, 255);
+    width: 200px;
+}
+
+h2{
+    border: 1px solid black;
+    margin: 0px; /* Tirando o margin padrão que vem no h2. */
+}
